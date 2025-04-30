@@ -1,0 +1,50 @@
+### Create new user
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "name": "NEW USER",
+  "email": "test1@example.com",
+  "password": "securepassword"
+}
+
+### Create new user
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "name": "HARISH PALKAR",
+  "email": "test@example.com",
+  "password": "securepassword"
+}
+
+### Update User Information
+PUT http://localhost:8080/api/users/1
+Content-Type: application/json
+
+{
+  "name": "HARISH",
+  "languagesKnow": ["Swedish"]
+}
+
+###  Get User Details
+GET http://localhost:8080/api/users/1
+Content-Type: application/json
+
+
+###  Delete User Details
+DELETE http://localhost:8080/api/users/1
+Content-Type: application/json
+
+
+###  Login User Details
+POST http://localhost:8080/api/users/login
+Content-Type: application/json
+
+{
+"email": "test1@example.com",
+"password": "securepassword"
+}
+
+###  Logout User Details
+PUT http://localhost:8080/api/users/logout/1
